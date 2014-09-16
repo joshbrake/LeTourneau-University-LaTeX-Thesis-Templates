@@ -1,0 +1,36 @@
+\documentclass{LETUThesis}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE SETUP
+\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\raggedright %Ragged right justification
+\setlength{\parindent}{0.5in} %Indent paragraphs
+\usepackage{setspace}
+\doublespace %Double space
+\pagestyle{plain} %Prevent headers and footers
+
+%%% SECTION SETUP
+\usepackage{sectsty}
+\chapterfont{\large\centering\MakeUppercase} %Center chapter titles
+
+%%% MISC PACKAGES
+%\usepackage{mathtools}
+\usepackage{amsmath} %Math formatting
+\usepackage{amssymb} %More symbols
+\usepackage{upgreek} %Upright Greek characters
+\usepackage{indentfirst} %Package to indent first line of section
+\usepackage{graphicx} %Graphics package
+\usepackage[space]{grffile} %Allow spaces in graphics imports
+\usepackage{subfigure} %Enables subfigure environment
+\usepackage{float}
+%\usepackage{booktabs} % for much better looking tables
+%\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage[labelfont={bf}, margin=1cm]{caption} %Caption settings
+\usepackage{hyperref}
+\usepackage[subfigure]{tocloft}
+\usepackage{IEEEtrantools}
+
+\graphicspath{{../Figures/}} %Declares location for graphics files
+\DeclareGraphicsExtensions{.png,.jpg,.pdf} %Declares automatic graphic file extensions

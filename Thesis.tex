@@ -1,0 +1,39 @@
+\include{PackageDeclarations}
+
+\begin{document}
+\bibliographystyle{IEEEtran} % IEEE bibliography style
+\bstctlcite{IEEEexample:BSTcontrol} % Custom entry to prevent dash for repeated authors
+
+% Custom list for list of equations
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+
+% List front matter (pages numbered with lower case roman numerals)
+\frontmatter
+\include{CoverPage}
+\include{SignaturePage}
+\include{Abstract}
+\include{Acknowledgments}
+\tableofcontents
+\newpage
+\setlength{\cftfigindent}{0pt} %Remove indent in list of figure (lof)
+\listoffigures
+\newpage
+\listofmyequations
+
+% List main content (i.e. chapters)
+\mainmatter
+\include{Chapter1}
+\include{Chapter2}
+\include{Chapter3}
+\include{Chapter4}
+\include{Chapter5}
+
+\nocite{*} % Command includes all titles in bibliography, not just those cited in paper.
+
+% List backmatter (i.e. appendices, bibliography, etc.)
+\backmatter
+\bibliography{../ThesisCitations}
+\end{document}
